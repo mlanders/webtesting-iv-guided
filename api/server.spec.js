@@ -28,9 +28,9 @@ describe('server.js', () => {
 			const res = await request(server).get('/');
 			expect(res.type).toBe('application/json');
 		});
-		test('should return body', async () => {
+		test('should return { api: "up" }', async () => {
 			const res = await request(server).get('/');
-			expect(res.type).toBe('application/json');
+			expect(res.body).toEqual({ api: 'up' });
 		});
 	});
 });
