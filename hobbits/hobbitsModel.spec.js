@@ -1,4 +1,3 @@
-const request = require('supertest');
 const db = require('../data/dbConfig.js');
 const Hobbits = require('./hobbitsModel.js');
 
